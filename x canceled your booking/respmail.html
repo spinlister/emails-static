@@ -48,6 +48,7 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 			body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!important;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
 			/* .ExternalClass td[class="ecxflexibleContainerBox"] h3 {padding-top: 10px !important;} /* Force hotmail to push 2-grid sub headers down */
 			.bodyText img {display:inline;vertical-align:baseline;} /* Outlook.com replaces emoji with images, we need to override display:block; (set above) to keep them inline with text. */
+			.gmailSpacer {display:none !important;} /* GMail strips style blocks, so we can effectively hide GMail-specific spacers from clients other than GMail */
 
 			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
 

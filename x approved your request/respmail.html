@@ -48,6 +48,7 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 			body, table, td, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; font-weight:normal!important;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
 			/* .ExternalClass td[class="ecxflexibleContainerBox"] h3 {padding-top: 10px !important;} /* Force hotmail to push 2-grid sub headers down */
 			.bodyText img {display:inline;vertical-align:baseline;} /* Outlook.com replaces emoji with images, we need to override display:block; (set above) to keep them inline with text. */
+			.gmailSpacer {display:none !important;} /* GMail strips style blocks, so we can effectively hide GMail-specific spacers from clients other than GMail */
 
 			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
 
@@ -453,9 +454,9 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 														<td align="left" valign="top" width="580" colspan="3" class="flexibleContainerCell" bgcolor="#464646" style="background-color:#464646;padding-top:13px;padding-left:18px;padding-bottom:13px;padding-right:18px;border-bottom-left-radius:5px;border-bottom-right-radius:5px;">
 
 															<!-- CONTENT TABLE // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:290px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:304px;">
 																<tr>
-																	<td colspan="2" align="left" valign="top"><img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/gmail-spacer.gif" width="304" alt="" title="" class="flexibleImage" style="max-width:304px;width:100%;display:block;border:0;outline:none;"/></td>
+																	<td colspan="2" align="left" valign="top"><img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/gmail-spacer.gif" width="304" height="1" alt="" title="" class="gmailSpacer" style="height:1px;max-width:304px;width:100%;display:block;border:0;outline:none;"/></td>
 																</tr>
 																<tr>
 																	<td align="left" valign="top" class="flexibleContainerBox" style="padding-top:6px;">
@@ -498,17 +499,17 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 															<!-- // CONTENT TABLE -->
 
 															<!-- DIVIDER // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:290px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:304px;">
 																<tr><td align="center" valign="top" style="padding-top:10px;"></td></tr>
-																<tr><td align="left" valign="top" width="100%" style="border-top:1px solid #555555;"><img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/gmail-spacer.gif" width="304" alt="" title="" class="flexibleImage" style="max-width:304px;width:100%;display:block;border:0;outline:none;"/></td></tr>
+																<tr><td align="left" valign="top" width="100%" style="border-top:1px solid #555555;"><img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/gmail-spacer.gif" width="304" height="1" alt="" title="" class="gmailSpacer" style="height:1px;max-width:304px;width:100%;display:block;border:0;outline:none;"/></td></tr>
 																<tr><td align="center" valign="top" style="padding-top:10px;"></td></tr>
 															</table>
 															<!-- // DIVIDER -->
 
 															<!-- CONTENT TABLE // -->
-															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:290px;">
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:304px;">
 																<tr>
-																	<td colspan="2" align="left" valign="top"><img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/gmail-spacer.gif" width="304" alt="" title="" class="flexibleImage" style="max-width:304px;width:100%;display:block;border:0;outline:none;"/></td>
+																	<td colspan="2" align="left" valign="top"><img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/gmail-spacer.gif" width="304" height="1" alt="" title="" class="gmailSpacer" style="height:1px;max-width:304px;width:100%;display:block;border:0;outline:none;"/></td>
 																</tr>
 																<tr>
 																	<td align="left" valign="top" class="flexibleContainerBox" style="padding-top:6px;">
@@ -542,17 +543,17 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 															<!-- // CONTENT TABLE -->
 
 															<!-- DIVIDER // -->
-															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:290px;">
+															<table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:304px;">
 																<tr><td align="center" valign="top" style="padding-top:10px;"></td></tr>
-																<tr><td align="left" valign="top" width="100%" style="border-top:1px solid #555555;"><img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/gmail-spacer.gif" width="304" alt="" title="" class="flexibleImage" style="max-width:304px;width:100%;display:block;border:0;outline:none;"/></td></tr>
+																<tr><td align="left" valign="top" width="100%" style="border-top:1px solid #555555;"><img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/gmail-spacer.gif" width="304" height="1" alt="" title="" class="gmailSpacer" style="height:1px;max-width:304px;width:100%;display:block;border:0;outline:none;"/></td></tr>
 																<tr><td align="center" valign="top" style="padding-top:10px;"></td></tr>
 															</table>
 															<!-- // DIVIDER -->
 
 															<!-- CONTENT TABLE // -->
-															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:290px;">
+															<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:304px;">
 																<tr>
-																	<td colspan="2" align="left" valign="top"><img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/gmail-spacer.gif" width="304" alt="" title="" class="flexibleImage" style="max-width:304px;width:100%;display:block;border:0;outline:none;"/></td>
+																	<td colspan="2" align="left" valign="top"><img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/gmail-spacer.gif" width="304" height="1" alt="" title="" class="gmailSpacer" style="height:1px;max-width:304px;width:100%;display:block;border:0;outline:none;"/></td>
 																</tr>
 																<tr>
 																	<td align="left" valign="top"><div style="color:#DDDDDD;line-height:150%;font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:14px;font-weight:normal;margin-top:0;margin-bottom:3px;padding-right:10px;text-align:left;">2 days @ $25/day</div></td>
