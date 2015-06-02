@@ -78,6 +78,7 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 			.imageContentText {margin-top: 10px;line-height:0;}
 			.imageContentText a {line-height:0;}
 			#invisibleIntroduction {display:none !important;} /* Removing the introduction text from the view */
+			.bikePhoto .imageContent::before {content:""; position:absolute; top:0;right:0;bottom:0;left:0; width:100%;height:100%; background:linear-gradient(rgba(0,0,0,0) 36%, rgba(0, 0, 0, 0.67) 76%, rgba(0, 0, 0, 0.86) 96%);}
 
 			/*FRAMEWORK HACKS & OVERRIDES */
 			span[class=ios-color-hack] a {color:#275100!important;text-decoration:none!important;} /* Remove all link colors in IOS (below are duplicates based on the color preference) */
@@ -427,13 +428,17 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 														<td align="center" valign="top" width="580" class="flexibleContainerCell">
 
 															<!-- CONTENT TABLE // -->
+															<table class="bikePhoto" border="0" cellpadding="0" cellspacing="0" width="100%" style="position:relative;">
+																<tr>
+																	<td height="95" colspan="3" valign="top" class="imageContent" style="position:relative;color:#999999;min-height:95px;border-top-left-radius:5px;border-top-right-radius:5px;">
+																		<img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/photo-bike.jpg" width="580" alt="" title="Rock Crawler" class="flexibleImage" style="max-width:580px;width:100%;display:block;border:0;outline:none;border-top-left-radius:5px;border-top-right-radius:5px;"/>
+																	</td>
 																</tr>
 																<tr>
-																	<td colspan="3" valign="top" class="imageContent" style="position:relative;">
-																		<img src="https://s3.amazonaws.com/spinlister-test-assets.spinlister.com/email-assets/photo-bike-shadow.jpg" width="580" alt="Rock Crawler" title="Rock Crawler" class="flexibleImage" style="max-width:580px;width:100%;display:block;border:0;outline:none;"/>
-																		<div style="height:80px;padding-top:15px;padding-left:20px;background-color:#555555;margin-top:-95px;">
-																			<h1 style="color:#FFFFFF;line-height:125%;font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:30px;font-weight:500;margin-top:0;margin-bottom:3px;text-align:left;"><strong style="font-weight:500;">Rock Crawler</strong></h1>
-																			<h3 style="color:#FFFFFF;line-height:125%;font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:18px;font-weight:500;margin-top:0;margin-bottom:0px;text-align:left;"><strong style="font-weight:500;">Bike &middot; Triathlon</strong></h3>
+																	<td colspan="3" valign="top" style="position:relative;bottom:0;z-index:2;background-color:#555555;">
+																		<div style="height:80px;padding-top:15px;padding-left:20px;margin-top:-95px;">
+																			<h1 style="color:#FFFFFF;line-height:125%;font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:30px;font-weight:500;margin-top:0;margin-bottom:3px;text-align:left;text-shadow:1px 2px 3px #333;"><strong style="font-weight:500;">Rock Crawler</strong></h1>
+																			<h3 style="color:#FFFFFF;line-height:125%;font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:18px;font-weight:500;margin-top:0;margin-bottom:0px;text-align:left;text-shadow:1px 2px 2px #333;"><strong style="font-weight:500;">Bike &middot; Triathlon</strong></h3>
 																		</div>
 																	</td>
 																</tr>
