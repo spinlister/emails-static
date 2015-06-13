@@ -36,7 +36,7 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 			table{border-collapse:collapse;}
 			table[id=bodyTable] {width:100%!important;margin:auto;max-width:580px!important;color:#999999;font-weight:normal;}
 			img, a img{border:0; outline:none; text-decoration:none;height:auto; line-height:100%;}
-			a {text-decoration:none !important;border-bottom: 1px solid;}
+			a {text-decoration:underline !important;}
 			h1, h2, h3, h4, h5, h6{color:#FFFFFF; font-weight:normal; font-family:'Helvetica Neue',HelveticaNeue,Helvetica; font-size:20px; line-height:125%; text-align:Left; letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;}
 
 			/* CLIENT-SPECIFIC STYLES */
@@ -81,14 +81,14 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 			.bikePhoto .imageContent::before {border-bottom-left-radius:4px;border-bottom-right-radius:4px;}
 
 			/*FRAMEWORK HACKS & OVERRIDES */
-			span[class=ios-color-hack] a {color:#275100!important;text-decoration:none!important;} /* Remove all link colors in IOS (below are duplicates based on the color preference) */
-			span[class=ios-color-hack2] a {color:#205478!important;text-decoration:none!important;}
-			span[class=ios-color-hack3] a {color:#DDDDDD!important;text-decoration:none!important;}
+			span[class=ios-color-hack] a {color:#275100 !important;} /* Remove all link colors in IOS (below are duplicates based on the color preference) */
+			span[class=ios-color-hack2] a {color:#205478 !important;}
+			span[class=ios-color-hack3] a {color:#DDDDDD !important;}
 			/* A nice and clean way to target phone numbers you want clickable and avoid a mobile phone from linking other numbers that look like, but are not phone numbers.  Use these two blocks of code to "unstyle" any numbers that may be linked.  The second block gives you a class to apply with a span tag to the numbers you would like linked and styled.
 			Inspired by Campaign Monitor's article on using phone numbers in email: http://www.campaignmonitor.com/blog/post/3571/using-phone-numbers-in-html-email/.
 			*/
-			.a[href^="tel"], a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:none!important;cursor:default!important;}
-			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:auto!important;cursor:default!important;}
+			.a[href^="tel"], a[href^="sms"] {color:#606060 !important;pointer-events:none !important;cursor:default !important;}
+			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {color:#606060 !important;pointer-events:auto !important;cursor:default !important;}
 
 			/* MOBILE STYLES */
 			@media only screen and (max-width: 599px){
@@ -730,7 +730,7 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 																<tr>
 																	<td style="padding-bottom:26px;">
 																		<div style="text-align:center;font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:16px;margin-bottom:0;color:#DDDDDD;line-height:160%;">
-																			<a href="#" target="_blank" style="text-decoration:none;color:#DDDDDD;"><span style="color:#DDDDDD;">Learn more about Spinlister</span></a>
+																			<a href="#" target="_blank" style="color:#DDDDDD;text-decoration:underline;"><span style="color:#DDDDDD;">Learn more about Spinlister</span></a>
 																		</div>
 																	</td>
 																</tr>
@@ -811,7 +811,7 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 																<tr>
 																	<td align="center" valign="top" class="textContent">
 																		<h1 style="color:#FFFFFF;line-height:125%;font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:22px;font-weight:normal;margin-bottom:8px;text-align:center;"><strong style="font-weight:500;">Get Free Spinlister Rentals</strong></h1>
-																		<div class="bodyText" style="color:#BBBBBB;line-height:160%;font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:18px;font-weight:normal;margin-bottom:0;text-align:left;">Invite your friends and get up to $10 in Spinlister Credit for each person you invite. When you invite them, they’ll also get $5 in credit just for signing up. <a href="#" target="_blank" style="font-size:12px;text-decoration:none;color:#BBBBBB;"><span style="color:#BBBBBB;">See terms and conditions</span></a></div>
+																		<div class="bodyText" style="color:#BBBBBB;line-height:160%;font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:18px;font-weight:normal;margin-bottom:0;text-align:left;">Invite your friends and get up to $10 in Spinlister Credit for each person you invite. When you invite them, they’ll also get $5 in credit just for signing up. <a href="#" target="_blank" style="font-size:12px;color:#BBBBBB;text-decoration:underline;"><span style="color:#BBBBBB;">See terms and conditions</span></a></div>
 																	</td>
 																</tr>
 															</table>
@@ -861,7 +861,7 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 																<tr>
 																	<td width="325" align="center" valign="middle" class="textContent" style="color:#888888;line-height:160%;font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:12px;font-weight:normal;padding-top:10px;margin-bottom:10px;text-align:left;">
 																		Tell your friends to use this promo code or use this link:<br>
-																		<a href="#" target="_blank" style="font-size:12px;text-decoration:none;color:#888888;"><span style="color:#888888;">http://spinl.tr/carterd12</span></a>
+																		<a href="#" target="_blank" style="font-size:12px;color:#888888;text-decoration:underline;"><span style="color:#888888;">http://spinl.tr/carterd12</span></a>
 																	</td>
 																</tr>
 															</table>
@@ -1024,8 +1024,8 @@ Respmail v1.1 (http://charlesmudy.com/respmail/)
 																	<td valign="top" bgcolor="#363636" style="padding-top:0;padding-bottom:20px;">
 																		<div style="font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;font-size:13px;color:#999999;text-align:left;line-height:150%;">
 																			<div>You are being sent this email because you signed up for Spinlister or our newsletter.</div>
-																			<div>Sent by <a href="#" target="_blank" style="text-decoration:none;color:#999999;"><span style="color:#999999;">Spinlister</span></a> &middot; 1640 5th St, Suite 210 Santa Monica, CA 90401</div>
-																			<div><a href="#" target="_blank" style="text-decoration:none;color:#999999;"><span style="color:#999999;">Unsubscribe</span></a> from this type of email &middot; <a href="#" target="_blank" style="text-decoration:none;color:#999999;"><span style="color:#999999;">Help Center</span></a> &middot; <a href="#" target="_blank" style="text-decoration:none;color:#999999;"><span style="color:#999999;">Privacy Policy</span></a></div>
+																			<div>Sent by <a href="#" target="_blank" style="color:#999999;text-decoration:underline;"><span style="color:#999999;">Spinlister</span></a> &middot; 1640 5th St, Suite 210 Santa Monica, CA 90401</div>
+																			<div><a href="#" target="_blank" style="color:#999999;text-decoration:underline;"><span style="color:#999999;">Unsubscribe</span></a> from this type of email &middot; <a href="#" target="_blank" style="color:#999999;text-decoration:underline;"><span style="color:#999999;">Help Center</span></a> &middot; <a href="#" target="_blank" style="color:#999999;text-decoration:underline;"><span style="color:#999999;">Privacy Policy</span></a></div>
 																		</div>
 																	</td>
 																</tr>
